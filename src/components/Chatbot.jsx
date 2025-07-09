@@ -42,7 +42,7 @@ const ChatBot = () => {
     <div className="glass relative w-[95%] md:w-[60%] h-[80dvh] rounded-lg shadow-lg p-4 space-y-2 mb-4 transition-colors duration-300">
     {/* Header */}
     <div className="relative border-b border-[#3E35BB] pb-4 flex justify-between items-center">
-      <h1 className="text-4xl font-semibold text-white drop-shadow-lg">WK AI Chatbot</h1>
+      <h1 className="text-4xl font-semibold text-white drop-shadow-lg flex flex-row items-center justify-center"><img className="w-9 h-9 mr-2 animate-pulse rounded-2xl"  src="chatbot.avif" alt="bot" />WK AI Chatbot</h1>
       <PageRefresh />
     </div>
   
