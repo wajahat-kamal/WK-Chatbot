@@ -40,7 +40,7 @@ const ChatBot = () => {
 
   return (
       <div
-        className="relative w-[95%] md:w-[60%] h-[80dvh] rounded-lg shadow p-4 space-y-2 mb-4 transition-colors duration-300 bg-gray-800"
+        className="relative w-[95%] md:w-[60%] h-[80dvh] rounded-lg shadow p-4 space-y-2 mb-4 transition-colors duration-300 bg-[#141418]"
       >
         {/* Header */}
         <div
@@ -74,6 +74,7 @@ const ChatBot = () => {
 
         {/* Input */}
         <div className="flex space-x-2 absolute bottom-3 w-[93%] md:w-[96%]">
+
           <input
             type="text"
             className="flex-1 border outline-none rounded px-3 py-2 bg-gray-700 border-gray-400 text-white"
@@ -83,6 +84,7 @@ const ChatBot = () => {
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && sendMessage()}
           />
+
           <button
             onClick={sendMessage}
             className="bg-blue-800 hover:bg-blue-700 text-white px-4 py-2 rounded"
