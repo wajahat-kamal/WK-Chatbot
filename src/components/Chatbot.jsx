@@ -71,7 +71,7 @@ const ChatBot = () => {
     </div>
   
     {/* Input */}
-    <div className="flex p-3 space-x-2 absolute bottom-3 w-[90%] glass rounded-lg">
+    <div className="flex p-3 space-x-2 absolute bottom-3 w-[97%] glass rounded-lg">
       <input
         type="text"
         className="flex-1 border-none outline-none bg-transparent placeholder-gray-400 text-white px-3 py-2"
