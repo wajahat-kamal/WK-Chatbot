@@ -38,7 +38,7 @@ const ChatBot = () => {
   }, [messages]);
 
   return (
-    <div className="glass font-poppins relative w-[95%] md:w-[60%] h-[70dvh] rounded-lg shadow-lg p-4 space-y-2 mb-4 transition-colors duration-300">
+    <div className="glass font-poppins relative w-[95%] md:w-[60%] h-[75dvh] rounded-lg shadow-lg p-4 space-y-2 mb-4 transition-colors duration-300">
       {/* Header */}
       <div className="relative border-b border-[#3E35BB] pb-4 flex justify-between items-center">
         <h1 className="text-3xl  md:text-5xl font-semibold text-white drop-shadow-lg flex flex-row items-center justify-center">
@@ -53,7 +53,7 @@ const ChatBot = () => {
       </div>
 
       {/* Messages */}
-      <div className="pt-5 pb-20 space-y-4 md:space-y-0 h-[55dvh] overflow-y-auto pr-1 custom-scroll">
+      <div className="pt-5 pb-3 space-y-4 md:space-y-0 h-[49dvh] overflow-y-auto pr-1 custom-scroll">
         {!messages.length && (
           <div className="flex items-center justify-center h-full">
             <h2 className="text-4xl text-white font-semibold text-center">
