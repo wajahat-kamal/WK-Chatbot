@@ -4,4 +4,27 @@
   to {
     transform: rotate(360deg);
   }
+}.glass {
+  background: rgba(20,20,28,0.6);
+  backdrop-filter: blur(10px);
+}
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 10px;
 }
