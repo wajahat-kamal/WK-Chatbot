@@ -5,22 +5,7 @@ import botImage from "/public/chatbot.avif";
 
 export default function ChatifyCard() {
   // --- Theme Handling ---
-  const [theme, setTheme] = useState(() => {
-    // pehle localStorage check karega
-    const saved = localStorage.getItem("theme");
-    if (saved) return saved;
-    // warna system preference check karega
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-  });
-
-  useEffect(() => {
-    // body par theme class apply kare
-    document.documentElement.classList.toggle("dark", theme === "dark");
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
+  const [theme, setTheme] = useState("dark");
   const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
 
   const handleRefresh = () => {
@@ -65,7 +50,7 @@ export default function ChatifyCard() {
           <div className="flex items-center gap-2">
             <button
               onClick={handleRefresh}
-              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700
+              className="p-2 rounded-lg hover:bg-purple-600 dark:bg-gray-700
                          text-gray-600 dark:text-gray-200 transition-colors duration-300"
               title="Refresh chat"
             >
@@ -74,7 +59,7 @@ export default function ChatifyCard() {
 
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700
+              className="p-2 rounded-lg hover:bg-purple-600 dark:bg-gray-700
                          text-gray-600 dark:text-gray-200 transition-colors duration-300"
               title="Toggle theme"
             >
