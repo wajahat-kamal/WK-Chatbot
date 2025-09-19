@@ -25,7 +25,7 @@ export default function ChatifyCard() {
       <div
         className={`${
           theme === "light"
-            ? "bg-white/80 text-gray-900"
+            ? "bg-white/60 text-gray-900"
             : "bg-gray-900/80 text-gray-100"
         } w-full sm:w-[420px] h-screen sm:h-[540px]
           sm:rounded-2xl shadow-2xl flex flex-col overflow-hidden
@@ -35,7 +35,7 @@ export default function ChatifyCard() {
         {/* Header */}
         <header
           className="flex items-center justify-between px-5 py-4
-                     bg-white/50 dark:bg-gray-800/50 backdrop-blur-md
+                     bg-white/10 dark:bg-gray-800/50 backdrop-blur-md
                      border-b border-gray-200/40 dark:border-gray-700/40
                      shadow-sm transition-colors duration-700"
         >
@@ -46,7 +46,7 @@ export default function ChatifyCard() {
               alt="Chatify Logo"
               className="w-10 h-10 rounded-full object-cover shadow-md ring-2 ring-purple-500/40"
             />
-            <h1 className="text-2xl font-bold tracking-wide">
+            <h1 className="text-2xl font-bold tracking-wide text-white">
               CHATIFY
             </h1>
           </div>
@@ -57,6 +57,7 @@ export default function ChatifyCard() {
               onClick={handleRefresh}
               className="p-2 rounded-xl hover:bg-purple-500/20
                          text-gray-600 dark:text-gray-200
+                         bg-gray-700
                          hover:text-purple-600 dark:hover:text-purple-400
                          transition-colors duration-300"
               title="Refresh chat"
@@ -66,7 +67,7 @@ export default function ChatifyCard() {
 
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-xl hover:bg-purple-500/20
+              className="p-2 rounded-xl hover:bg-purple-500/20 bg-gray-700
                          text-gray-600 dark:text-gray-200
                          hover:text-purple-600 dark:hover:text-purple-400
                          transition-colors duration-300"
@@ -96,7 +97,7 @@ export default function ChatifyCard() {
           onSubmit={(e) => e.preventDefault()}
           className="flex items-center gap-2 px-4 py-4
                      border-t border-gray-200/40 dark:border-gray-700/40
-                     bg-gray-50/50 dark:bg-gray-800/50
+                     bg-gray-50/10 dark:bg-gray-800/50
                      backdrop-blur-md transition-colors duration-700"
         >
           <input
