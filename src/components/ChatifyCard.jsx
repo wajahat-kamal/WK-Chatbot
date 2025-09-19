@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, Sun, Moon, RotateCcw } from "lucide-react";
 import botImage from "/public/chatbot.avif";
+import Chatbot from "/public/chatbot.png";
 
 export default function ChatifyCard() {
   const [theme, setTheme] = useState("dark");
@@ -27,7 +28,7 @@ export default function ChatifyCard() {
           theme === "light"
             ? "bg-white/60 text-gray-900"
             : "bg-gray-900/80 text-gray-100"
-        } w-full sm:w-[420px] h-screen sm:h-[540px]
+        } w-full sm:w-[420px] h-screen sm:h-[550px]
           sm:rounded-2xl shadow-2xl flex flex-col overflow-hidden
           backdrop-blur-xl border border-gray-200/40 dark:border-gray-700/40
           transition-all duration-700`}
@@ -81,9 +82,9 @@ export default function ChatifyCard() {
         {/* Body */}
         <div className="flex-1 flex flex-col items-center justify-center text-center px-6 py-8">
           <motion.img
-            src={botImage}
+            src={Chatbot}
             alt="Bot"
-            className="w-28 h-28 mb-6 drop-shadow-xl"
+            className="w-34 h-34 drop-shadow-xl"
             animate={{ y: [0, -20, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
           />
