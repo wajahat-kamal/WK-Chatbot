@@ -17,14 +17,14 @@ export default function ChatifyCard() {
     <div
       className={`${
         theme === "light"
-          ? "bg-gradient-to-br from-amber-50 to-orange-100"
-          : "bg-gradient-to-br from-gray-900 to-black"
-      } min-h-screen w-full flex items-center justify-center p-4 transition-colors duration-500`}
+          ? "bg-gray-300"
+          : "bg-gradient-to-br from-gray-800 to-black"
+      } min-h-screen w-full flex items-center justify-center transition-colors duration-500`}
     >
       {/* Card */}
       <div
-        className="w-full sm:w-[420px] bg-white dark:bg-gray-900
-                   rounded-2xl shadow-2xl flex flex-col overflow-hidden
+        className="w-full sm:w-[420px] h-screen sm:h-[520px] bg-white dark:bg-gray-900
+                   sm:rounded-2xl shadow-2xl flex flex-col overflow-hidden
                    border border-gray-200 dark:border-gray-700
                    transition-all duration-500"
       >
