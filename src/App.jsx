@@ -1,7 +1,7 @@
-import ChatBot from "./components/Chatbot";
+import ChatifyCard from "./components/ChatifyCard";
 
 export default function() {
   return(
-     <ChatBot/>
+     <ChatifyCard/>
   )
 }
