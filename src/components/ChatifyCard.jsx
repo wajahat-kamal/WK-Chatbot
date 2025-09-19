@@ -10,16 +10,13 @@ export default function ChatifyCard() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // 🔄 Theme toggle
   const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
 
-  // 🔄 Chat reset
   const handleRefresh = () => {
     setMessages([]);
     setInput("");
   };
 
-  // ➡️ User message add karna (sirf local, koi API call nahi)
   const handleSend = (e) => {
     e.preventDefault();
     const userMsg = input.trim();
